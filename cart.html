@@ -10,13 +10,49 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>
+  .cartBoxes::-webkit-scrollbar{
+display: none;
+  }
+</style>
 <body>
   <div class="w-screen h-screen bg-zinc-500" >
-    <div class="w-screen " >
-      <h1 class="text-white text-center py-[1.8vw] text-2xl font-500"  > Cart  </h1>
+    <div class="w-screen  " >
+      <h1 class="text-white text-center py-[1.8vw] text-2xl font-500  "  > Cart  </h1>
   </div>
-<div class=" w-screen h-[40vw] " >
+<div class=" w-screen h-[40vw]  " >
+  <div class="w-[100%] h-[10px ] flex items-center justify-around "  >
+    <h1>Product</h1>
+    <h1>quntity</h1>
+    <h1>Amount</h1>
+</div> 
+<br> <hr>
+<div class=" flex  flex-col gap-6 mt-3 cartContainer w-[100%] h-[75%] pt-2 pb-2   overflow-x-auto ">
+<!-- <div class ></div> -->
 
+
+<div class="cartBoxes flex items-center justify-around pr-12 " >
+<div class="flex items-center gap-2">
+ <img class="w-[80px] h-[80px] object-contain " src="./file (1).png" alt="">
+ <h1>avatar</h1>
+</div>
+<div class="flex items-center gap-2 " > 
+  <a href="">  <h1 class="text-2xl" >-</h1></a>
+  <h2 class="text-2xl" >2</h2>
+ <a href="">   <h1 class="text-2xl" >+</h1></a>
+</div>
+ <h1>₹899</h1>
+ </div> 
+</div>
+<div class="amountBar flex items-center gap-[25vw] justify-around">
+<h1>Total Amount</h1>
+<h1>899</h1>
+</div>
+<div class="w-screen  flex  items-center justify-center pt-[2vw]" >
+<a href="/book.html">Buy now</a>
+<!-- <button id="rzp-button1" ></button> -->
+
+</div>
 </div>
 
   </div>
